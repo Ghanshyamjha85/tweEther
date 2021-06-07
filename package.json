@@ -1,0 +1,34 @@
+{
+  "name": "Twitter-clone",
+  "version": "1.0.0",
+  "description": "",
+  "main": "truffle-config.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "start": "truffle migrate --reset && npm run rm && npm run artifacts && next client",
+    "rm": "rm -r ./client/web3/artifacts",
+    "ropsten": "truffle migrate --network ropsten && npm run rm && npm run artifacts && next client",
+    "artifacts": "cp -r ./build/contracts/ ./client/web3/artifacts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@material-ui/core": "^4.11.4",
+    "@material-ui/icons": "^4.11.2",
+    "@truffle/contract": "^4.3.18",
+    "@truffle/hdwallet-provider": "^1.4.0",
+    "@zeit/next-css": "^1.0.1",
+    "moment": "^2.29.1",
+    "next": "^10.2.3",
+    "react": "^17.0.2",
+    "react-avatar": "^3.10.0",
+    "react-dom": "^17.0.2",
+    "react-moment": "^1.1.1",
+    "web3": "^1.3.6"
+  },
+  "devDependencies": {}
+}

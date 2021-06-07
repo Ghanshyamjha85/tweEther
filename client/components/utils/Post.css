@@ -1,0 +1,33 @@
+.post {
+    border-bottom: 3px solid var(--twitter-background);
+    padding: 20px;
+}
+
+.post_header{
+    display: flex;
+
+}
+
+.post_footer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.post_userId {
+    padding:0 10px;
+    color: grey;
+}
+
+.post_time {
+    color: gray;
+}
+
+.post_body {
+    padding: 10px 0 0 40px;
+
+}
+
+.post_userName {
+    padding: 5px ;
+}
